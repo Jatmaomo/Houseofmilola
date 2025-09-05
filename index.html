@@ -1,1 +1,402 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House of Milola – Redefining Style, Comfort & Luxury</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .luxury-bg {
+            background: linear-gradient(135deg, #006B5B 0%, #00382F 100%);
+        }
+        .btn-primary {
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .whatsapp-btn {
+            transition: all 0.3s ease;
+        }
+        .whatsapp-btn:hover {
+            transform: scale(1.05);
+        }
+        .product-card {
+            transition: all 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/2347030902651" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all whatsapp-btn" data-aos="fade-left" data-aos-delay="300">
+        <i data-feather="message-circle"></i>
+    </a>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen w-full overflow-hidden">
+        <div id="hero-bg" class="absolute inset-0 z-0 bg-[#006B5B] flex items-center justify-center">
+            <img src="https://i.ibb.co/zh8r6LY1/IMG-20250904-WA0061.jpg" alt="House of Milola" class="absolute inset-0 w-full h-full object-cover opacity-70">
+            <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+        </div>
+        <div class="relative z-10 h-full flex flex-col justify-center items-center text-center px-6">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6" data-aos="fade-down" data-aos-delay="100">House of Milola</h1>
+            <p class="text-xl md:text-2xl text-white mb-10 max-w-2xl" data-aos="fade-down" data-aos-delay="200">Redefining Style, Comfort & Luxury</p>
+            <button onclick="scrollToSection('products')" class="bg-[#FFB703] hover:bg-[#E6A000] text-[#006B5B] font-bold py-3 px-8 rounded-full btn-primary" data-aos="fade-up" data-aos-delay="300">
+                Shop Now
+            </button>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-4xl font-bold text-[#006B5B] mb-4">Our Premium Collections</h2>
+            <div class="w-24 h-1 bg-[#FFB703] mx-auto"></div>
+        </div>
+
+        <!-- Clothes Section -->
+        <div class="mb-32" data-aos="fade-up">
+            <h3 class="text-3xl font-semibold text-[#006B5B] mb-8 text-center">Fashion Apparel</h3>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="rounded-xl overflow-hidden shadow-2xl">
+                    <div style="position:relative; width:100%; height:0; padding-bottom:178.218%">
+                        <iframe allow="fullscreen" allowfullscreen height="100%" src="https://streamable.com/e/nq7x2j?" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0; top:0; overflow:hidden;"></iframe>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-lg text-gray-600 mb-6">Experience unparalleled style with our exclusive fashion collection. Each piece is meticulously crafted to offer comfort without compromising on elegance.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://wa.me/2347030902651?text=Are%20you%20interested%20in%20this%20outfit?" class="bg-[#006B5B] hover:bg-[#005046] text-white font-medium py-3 px-6 rounded-full btn-primary">
+                            Order Now
+                        </a>
+                        <a href="https://wa.me/2347030902651?text=Are%20you%20interested%20in%20this%20outfit?" class="bg-[#0077FF] hover:bg-[#0066DD] text-white font-medium py-3 px-6 rounded-full btn-primary">
+                            Get This on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sneakers Section -->
+        <div class="mb-32" data-aos="fade-up">
+            <h3 class="text-3xl font-semibold text-[#006B5B] mb-8 text-center">Exclusive Sneakers</h3>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://i.ibb.co/XZNnP9S0/file-00000000d36061fd8fc24b40d959e041.png" alt="Premium Sneakers" class="rounded-xl shadow-2xl w-full">
+                </div>
+                <div>
+                    <p class="text-lg text-gray-600 mb-6">Step into style and comfort with our exclusive sneakers collection. Designed for those who appreciate premium quality and contemporary design.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://wa.me/2347030902651?text=Are%20you%20interested%20in%20these%20sneakers?" class="bg-[#0077FF] hover:bg-[#0066DD] text-white font-medium py-3 px-6 rounded-full btn-primary">
+                            Order Now
+                        </a>
+                        <a href="https://wa.me/2347030902651?text=Are%20you%20interested%20in%20these%20sneakers?" class="bg-[#006B5B] hover:bg-[#005046] text-white font-medium py-3 px-6 rounded-full btn-primary">
+                            Get It on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Home Essentials Section -->
+        <div class="mb-32" data-aos="fade-up">
+            <h3 class="text-3xl font-semibold text-[#006B5B] mb-12 text-center">Luxury Home Essentials</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Duvet -->
+                <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all transform">
+                    <img src="https://i.ibb.co/TxPXFcbd/file-00000000940861f49e4e48021f11210f.png alt="Premium Duvet" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold text-[#006B5B] mb-2">Premium Duvet</h4>
+                        <p class="text-gray-600 mb-4">Indulge in cloud-like comfort with our premium duvet, designed for restful sleep.</p>
+                        <button onclick="openProductModal('Premium Duvet')" class="w-full bg-[#006B5B] hover:bg-[#005046] text-white font-medium py-2 px-4 rounded-full">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Fiber Pillows -->
+                <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all transform">
+<img src="https://i.ibb.co/7d4NnDFF/file-000000001eb0624682300f6231c459c4.png" alt="Fiber Pillows" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold text-[#006B5B] mb-2">Fiber Pillows</h4>
+                        <p class="text-gray-600 mb-4">Experience the perfect balance of softness and support with our fiber pillows.</p>
+                        <button onclick="openProductModal('Fiber Pillows')" class="w-full bg-[#006B5B] hover:bg-[#005046] text-white font-medium py-2 px-4 rounded-full">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Lingerie -->
+                <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all transform">
+<img src="https://i.ibb.co/6R4fxJJ7/file-00000000286861f4ab69dda022ed9c3e.png"alt="Luxury Lingerie" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold text-[#006B5B] mb-2">Luxury Lingerie</h4>
+                        <p class="text-gray-600 mb-4">Elevate your intimate wear with our premium collection of comfortable yet elegant lingerie.</p>
+                        <button onclick="openProductModal('Luxury Lingerie')" class="w-full bg-[#006B5B] hover:bg-[#005046] text-white font-medium py-2 px-4 rounded-full">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real Estate Section -->
+    <section class="luxury-bg py-20 px-6">
+        <div class="max-w-7xl mx-auto text-center" data-aos="fade-up">
+            <h2 class="text-4xl font-bold text-white mb-6">Partner With Us or Book Your Dream Property</h2>
+            <p class="text-xl text-white opacity-90 mb-10 max-w-3xl mx-auto">Elevate your lifestyle with our exclusive real estate offerings tailored to meet your luxury living standards.</p>
+            <a href="https://wa.me/2347030902651?text=Hello%20House%20of%20Milola,%20I'm%20interested%20in%20real%20estate%20services." class="bg-[#FFB703] hover:bg-[#E6A000] text-[#006B5B] font-bold py-3 px-8 rounded-full inline-block btn-primary">
+                Book Now on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right">
+                
+<img src="https://i.ibb.co/r2sCXTfM/IMG-20250905-WA0009.jpg"" alt="About House of Milola" class="rounded-xl shadow-2xl w-full">
+            </div>
+            <div data-aos="fade-left">
+                <h2 class="text-4xl font-bold text-[#006B5B] mb-6">Our Story</h2>
+                <p class="text-lg text-gray-600 mb-6">House of Milola was founded with a vision to transform everyday living into an extraordinary experience. We bring together premium fashion, luxurious home essentials, and distinguished real estate services under one roof.</p>
+                <p class="text-lg text-gray-600">Our commitment to quality, attention to detail, and exceptional customer service has positioned us as a trusted name in luxury lifestyle solutions. Every product and service we offer is carefully curated to exceed expectations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="luxury-bg py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-white mb-4">Get In Touch</h2>
+                <div class="w-24 h-1 bg-[#FFB703] mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div data-aos="fade-right">
+                    <h3 class="text-2xl font-semibold text-white mb-6">Contact Information</h3>
+                    <div class="flex items-start mb-6">
+                        <i data-feather="phone" class="text-[#FFB703] mr-4 mt-1"></i>
+                        <div>
+                            <p class="text-white font-medium">WhatsApp</p>
+                            <p class="text-white opacity-90">+234 703 090 2651</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start mb-6">
+                        <i data-feather="mail" class="text-[#FFB703] mr-4 mt-1"></i>
+                        <div>
+                            <p class="text-white font-medium">Email</p>
+                            <p class="text-white opacity-90">milola_beddings@mail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i data-feather="map-pin" class="text-[#FFB703] mr-4 mt-1"></i>
+                        <div>
+                            <p class="text-white font-medium">Location</p>
+                            <p class="text-white opacity-90">Lagos, Nigeria</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left">
+                    <form id="contactForm" class="bg-white p-8 rounded-xl shadow-lg">
+                        <div class="mb-6">
+                            <label for="name" class="block text-[#006B5B] font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#006B5B]">
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-[#006B5B] font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#006B5B]">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-[#006B5B] font-medium mb-2">Your Message</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#006B5B]"></textarea>
+                        </div>
+                        <button type="submit" class="bg-[#006B5B] hover:bg-[#005046] text-white font-medium py-3 px-6 rounded-full w-full">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#00382F] text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">House of Milola</h3>
+                <p class="opacity-80">Redefining Style, Comfort & Luxury through premium products and exceptional services.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="#products" class="opacity-80 hover:opacity-100 hover:text-[#FFB703] transition">Collections</a></li>
+                    <li><a href="#about" class="opacity-80 hover:opacity-100 hover:text-[#FFB703] transition">About Us</a></li>
+                    <li><a href="#contact" class="opacity-80 hover:opacity-100 hover:text-[#FFB703] transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Products</h4>
+                <ul class="space-y-2">
+                    <li><a href="#products" class="opacity-80 hover:opacity-100 hover:text-[#FFB703] transition">Fashion Apparel</a></li>
+                    <li><a href="#products" class="opacity-80 hover:opacity-100 hover:text-[#FFB703] transition">Sneakers</a></li>
+                    <li><a href="#products" class="opacity-80 hover:opacity-100 hover:text-[#FFB703] transition">Home Essentials</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Connect With Us</h4>
+                <div class="flex space-x-4">
+                    
+                    <a href="https://wa.me/2347030902651" class="opacity-80 hover:opacity-100 hover:text-[#FFB703] transition"><i data-feather="message-circle"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto border-t border-opacity-20 border-white mt-8 pt-8 text-center">
+            <p class="opacity-70">© 2025 House of Milola. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+        <div class="bg-white rounded-xl p-8 max-w-md w-full mx-4 shadow-2xl">
+            <h3 id="modalProductTitle" class="text-2xl font-bold text-[#006B5B] mb-6"></h3>
+            <form id="productOrderForm" class="space-y-4">
+                <div>
+                    <label for="orderName" class="block text-gray-700 mb-2">Full Name</label>
+                    <input type="text" id="orderName" name="orderName" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#006B5B]">
+                </div>
+                <div>
+                    <label for="orderEmail" class="block text-gray-700 mb-2">Email</label>
+                    <input type="email" id="orderEmail" name="orderEmail" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#006B5B]">
+                </div>
+                <div>
+                    <label for="orderPhone" class="block text-gray-700 mb-2">Phone Number</label>
+                    <input type="tel" id="orderPhone" name="orderPhone" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#006B5B]">
+                </div>
+                <div>
+                    <label for="orderLocation" class="block text-gray-700 mb-2">Location</label>
+                    <input type="text" id="orderLocation" name="orderLocation" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#006B5B]">
+                </div>
+                <div class="flex space-x-4 pt-4">
+                    <button type="submit" class="bg-[#006B5B] hover:bg-[#005046] text-white font-medium py-2 px-6 rounded-full flex-1">
+                        Place Order
+                    </button>
+                    <button type="button" onclick="closeProductModal()" class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-medium py-2 px-6 rounded-full flex-1">
+                        Cancel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Initialize animations and icons
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+        feather.replace();
+
+        // Scroll to section
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Product Modal Functions
+        let currentProduct = '';
+        
+        function openProductModal(productName) {
+            currentProduct = productName;
+            document.getElementById('modalProductTitle').textContent = productName;
+            document.getElementById('productModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeProductModal() {
+            document.getElementById('productModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+            document.getElementById('productOrderForm').reset();
+        }
+
+        // Form Submissions
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            const whatsappUrl = `https://wa.me/2347030902651?text=${encodeURIComponent(
+                `New Contact Message\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`
+            )}`;
+            
+            window.open(whatsappUrl, '_blank');
+            this.reset();
+            alert('Thank you for your message! We will contact you soon.');
+        });
+
+        document.getElementById('productOrderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('orderName').value;
+            const email = document.getElementById('orderEmail').value;
+            const phone = document.getElementById('orderPhone').value;
+            const location = document.getElementById('orderLocation').value;
+            
+            const whatsappUrl = `https://wa.me/2347030902651?text=${encodeURIComponent(
+                `Order Request: ${currentProduct}\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nLocation: ${location}`
+            )}`;
+            
+            window.open(whatsappUrl, '_blank');
+            this.reset();
+            closeProductModal();
+            alert('Your order request has been sent successfully!');
+        });
+
+        // Initialize Vanta.js Globe
+        VANTA.GLOBE({
+            el: "#hero-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+   
+                      
+  
+                          color: 0x006b5b,
+            size: 0.80,
+            backgroundColor: 0x0
+        });
+    </script>
+</body>
+      </html>
+  
+
+
