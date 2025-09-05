@@ -1,0 +1,548 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House of Milola | Luxury Lifestyle & E-Commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(0,107,91,0.8) 0%, rgba(0,107,91,0.6) 50%, transparent 100%);
+        }
+        .product-card:hover .product-overlay {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .product-overlay {
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateY(10px);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-emerald-800">House of Milola</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#products" class="hover:text-amber-600 transition">Products</a>
+                    <a href="#about" class="hover:text-amber-600 transition">About</a>
+                    <a href="#contact" class="hover:text-amber-600 transition">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <i data-feather="menu" class="w-6 h-6"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center" style="background-image: url('https://i.ibb.co/zh8r6LY1/IMG-20250904-WA0061.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-overlay absolute inset-0"></div>
+        <div class="container mx-auto px-6 relative z-10 text-white" data-aos="fade-right">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 max-w-lg">Redefining Style, Comfort & Luxury</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-lg">Experience the pinnacle of fashion and lifestyle with House of Milola's curated collections.</p>
+            <a href="#products" class="inline-block bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-full transition transform hover:scale-105">
+                Explore Collections
+            </a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-emerald-800">Our Collections</h2>
+            
+            <!-- Clothes Subsection -->
+            <div class="mb-32" data-aos="fade-up">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="w-full md:w-1/2">
+                        <div class="aspect-w-16 aspect-h-9 bg-gray-100 rounded-xl overflow-hidden">
+                            <div style="position:relative; width:100%; height:0px; padding-bottom:178.218%">
+                                <iframe allow="fullscreen" allowfullscreen height="100%" src="https://streamable.com/e/nq7x2j?" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-2xl font-bold text-emerald-800 mb-4">Premium Clothing</h3>
+                        <p class="text-gray-600 mb-6">Discover our exclusive fashion line that blends contemporary style with unparalleled comfort. Each piece is crafted with premium materials for a luxurious feel.</p>
+                        <div class="flex gap-4">
+                            <button onclick="showOrderForm('Clothing Collection')" class="inline-flex items-center bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-full transition">
+                                <i data-feather="shopping-bag" class="mr-2 w-5 h-5"></i> Order Now
+                            </button>
+                            <a href="https://wa.me/2347030902651?text=I%20need%20this%20outfit,%20how%20much?" target="_blank" class="inline-flex items-center bg-emerald-800 hover:bg-emerald-700 text-white font-bold py-3 px-6 rounded-full transition">
+                                <i data-feather="message-circle" class="mr-2 w-5 h-5"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sneakers Subsection -->
+            <div class="mb-32" data-aos="fade-up">
+                <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+                    <div class="w-full md:w-1/2">
+                        <img src="https://i.ibb.co/XZNnP9S0/file-00000000d36061fd8fc24b40d959e041.png" alt="Premium Sneakers" class="w-full h-auto rounded-xl shadow-lg">
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-2xl font-bold text-emerald-800 mb-4">Luxury Footwear</h3>
+                        <p class="text-gray-600 mb-6">Step into sophistication with our handcrafted sneakers collection. Designed for comfort and durability, each pair makes a statement.</p>
+                        <div class="flex gap-4">
+                            <button onclick="showOrderForm('Sneakers Collection')" class="inline-flex items-center bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-full transition">
+                                <i data-feather="shopping-bag" class="mr-2 w-5 h-5"></i> Order Now
+                            </button>
+                            <a href="https://wa.me/2347030902651?text=I%20want%20to%20order%20these%20sneakers." target="_blank" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition">
+                                <i data-feather="message-circle" class="mr-2 w-5 h-5"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Luxury Home Essentials -->
+            <div class="mb-32" data-aos="fade-up">
+                <h3 class="text-3xl font-bold text-center text-emerald-800 mb-12">Luxury Home Essentials</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Product Card - Duvet -->
+                    <div class="product-card bg-white rounded-xl shadow-md overflow-hidden relative">
+                        <img src="http://static.photos/home/640x360/1" alt="Premium Duvet" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-emerald-800 mb-2">Premium Duvet</h4>
+                            <p class="text-gray-600 mb-4">Ultra-soft featherlight duvet for the perfect night's sleep.</p>
+                            <button onclick="showOrderForm('Premium Duvet')" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-4 rounded transition">
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card - Fiber Pillows -->
+                    <div class="product-card bg-white rounded-xl shadow-md overflow-hidden relative">
+                        <img src="http://static.photos/home/640x360/2" alt="Fiber Pillows" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-emerald-800 mb-2">Fiber Pillows</h4>
+                            <p class="text-gray-600 mb-4">Hypoallergenic memory fiber pillows for optimal support.</p>
+                            <button onclick="showOrderForm('Fiber Pillows')" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-4 rounded transition">
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card - Lingerie -->
+                    <div class="product-card bg-white rounded-xl shadow-md overflow-hidden relative">
+                        <img src="http://static.photos/fashion/640x360/3" alt="Luxury Lingerie" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-emerald-800 mb-2">Luxury Lingerie</h4>
+                            <p class="text-gray-600 mb-4">Silk and lace intimate wear for effortless elegance.</p>
+                            <button onclick="showOrderForm('Luxury Lingerie')" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-4 rounded transition">
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card - Cotton Towels -->
+                    <div class="product-card bg-white rounded-xl shadow-md overflow-hidden relative">
+                        <img src="http://static.photos/home/640x360/4" alt="Egyptian Cotton Towels" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-emerald-800 mb-2">Cotton Towels</h4>
+                            <p class="text-gray-600 mb-4">100% Egyptian cotton for ultimate softness and absorbency.</p>
+                            <button onclick="showOrderForm('Cotton Towels')" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-4 rounded transition">
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card - Cotton Bathrobes -->
+                    <div class="product-card bg-white rounded-xl shadow-md overflow-hidden relative">
+                        <img src="http://static.photos/home/640x360/5" alt="Cotton Bathrobes" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-emerald-800 mb-2">Cotton Bathrobes</h4>
+                            <p class="text-gray-600 mb-4">Plush, absorbent bathrobes for spa-like luxury at home.</p>
+                            <button onclick="showOrderForm('Cotton Bathrobes')" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-4 rounded transition">
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card - Pajamas -->
+                    <div class="product-card bg-white rounded-xl shadow-md overflow-hidden relative">
+                        <img src="http://static.photos/home/640x360/6" alt="Silk Pajamas" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-emerald-800 mb-2">Pajamas</h4>
+                            <p class="text-gray-600 mb-4">Breathable, comfortable sleepwear for restful nights.</p>
+                            <button onclick="showOrderForm('Pajamas')" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-4 rounded transition">
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Real Estate Services -->
+            <div class="mb-20" data-aos="fade-up">
+                <div class="bg-emerald-800 rounded-xl p-8 md:p-12 text-white">
+                    <div class="max-w-4xl mx-auto">
+                        <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">Premium Real Estate Services</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                            <div class="bg-emerald-700 bg-opacity-50 p-6 rounded-lg">
+                                <i data-feather="home" class="w-8 h-8 mb-4"></i>
+                                <h3 class="text-xl font-bold mb-2">Residential Properties</h3>
+                                <p>Luxury apartments, duplexes, and mansions in prime locations. Fully furnished options available.</p>
+                            </div>
+                            <div class="bg-emerald-700 bg-opacity-50 p-6 rounded-lg">
+                                <i data-feather="briefcase" class="w-8 h-8 mb-4"></i>
+                                <h3 class="text-xl font-bold mb-2">Commercial Properties</h3>
+                                <p>Office spaces, retail shops, and warehouses strategically located for business growth.</p>
+                            </div>
+                            <div class="bg-emerald-700 bg-opacity-50 p-6 rounded-lg">
+                                <i data-feather="map" class="w-8 h-8 mb-4"></i>
+                                <h3 class="text-xl font-bold mb-2">Land Acquisition</h3>
+                                <p>Prime land parcels with proper documentation for investment or development.</p>
+                            </div>
+                            <div class="bg-emerald-700 bg-opacity-50 p-6 rounded-lg">
+                                <i data-feather="dollar-sign" class="w-8 h-8 mb-4"></i>
+                                <h3 class="text-xl font-bold mb-2">Property Management</h3>
+                                <p>Professional management services for your rental properties and investments.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col sm:flex-row justify-center gap-4">
+                            <button onclick="showRealEstateForm('Property Inquiry')" class="inline-flex items-center bg-white hover:bg-gray-100 text-emerald-800 font-bold py-3 px-6 rounded-full transition">
+                                <i data-feather="edit" class="mr-2 w-5 h-5"></i> Inquiry Form
+                            </button>
+                            <a href="https://wa.me/2347030902651?text=Hello%20House%20of%20Milola,%20I%27m%20interested%20in%20your%20real%20estate%20services.%20Please%20contact%20me." target="_blank" class="inline-flex items-center bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-full transition">
+                                <i data-feather="message-circle" class="mr-2 w-5 h-5"></i> WhatsApp Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-emerald-800">Our Story</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2" data-aos="fade-right">
+                    <img src="http://static.photos/office/1024x576/1" alt="House of Milola" class="w-full rounded-xl shadow-lg">
+                </div>
+                <div class="w-full md:w-1/2" data-aos="fade-left">
+                    <h3 class="text-2xl font-bold text-emerald-800 mb-4">Elevating Lifestyle Through Quality</h3>
+                    <p class="text-gray-600 mb-4">Founded with a passion for refined living, House of Milola has been redefining standards in fashion, home essentials, and real estate since our inception.</p>
+                    <p class="text-gray-600 mb-4">We meticulously curate each product and service, ensuring they meet our exacting standards of quality, comfort, and aesthetic appeal.</p>
+                    <p class="text-gray-600">Our commitment goes beyond transactions - we build relationships by understanding our clients' aspirations and delivering solutions that exceed expectations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-emerald-800">Get In Touch</h2>
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="w-full md:w-1/2" data-aos="fade-right">
+                    <div class="bg-emerald-800 rounded-xl p-8 text-white h-full">
+                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i data-feather="phone" class="w-6 h-6 mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="font-bold">WhatsApp</h4>
+                                    <p class="text-emerald-100">07030902651</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="mail" class="w-6 h-6 mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="font-bold">Email</h4>
+                                    <p class="text-emerald-100">milola_beddings@mail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2" data-aos="fade-left">
+                    <form id="contactForm" class="bg-white rounded-xl shadow-md p-8">
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-600 focus:border-transparent" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-600 focus:border-transparent" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-600 focus:border-transparent" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-emerald-800 hover:bg-emerald-700 text-white font-bold py-3 px-6 rounded-lg transition">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-emerald-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold">House of Milola</h2>
+                    <p class="mt-2 text-emerald-100">Redefining Style, Comfort & Luxury</p>
+                </div>
+                <div class="flex flex-col md:flex-row md:space-x-12 space-y-4 md:space-y-0">
+                    <div>
+                        <h3 class="font-bold mb-2">Quick Links</h3>
+                        <ul class="space-y-1">
+                            <li><a href="#products" class="hover:text-amber-400 transition">Products</a></li>
+                            <li><a href="#about" class="hover:text-amber-400 transition">About</a></li>
+                            <li><a href="#contact" class="hover:text-amber-400 transition">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2">Connect</h3>
+                        <div class="flex space-x-4 items-center">
+                            <a href="#" class="hover:text-amber-400 transition"><i data-feather="instagram" class="w-5 h-5"></i></a>
+                            <a href="#" class="hover:text-amber-400 transition"><i data-feather="facebook" class="w-5 h-5"></i></a>
+                            <a href="#" class="hover:text-amber-400 transition"><i data-feather="twitter" class="w-5 h-5"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-emerald-800 mt-8 pt-8 text-center">
+                <p>&copy; 2023 House of Milola. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Order Form Modal -->
+    <div id="orderModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+    <!-- Same content remains -->
+</div>
+
+<!-- Real Estate Inquiry Modal -->
+<div id="realEstateModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-xl p-8 max-w-md w-full mx-4" data-aos="zoom-in">
+        <div class="flex justify-between items-center mb-6">
+            <h3 class="text-2xl font-bold text-emerald-800">Real Estate Inquiry</h3>
+            <button onclick="closeRealEstateForm()" class="text-gray-500 hover:text-gray-700">
+                <i data-feather="x" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <form id="realEstateForm" class="space-y-4">
+            <input type="hidden" id="inquiryType" value="Property Inquiry">
+            <div>
+                <label for="reName" class="block text-gray-700 font-medium mb-1">Full Name</label>
+                <input type="text" id="reName" class="w-full px-4 py-2 border border-gray-300 rounded-lg" required>
+            </div>
+            <div>
+                <label for="reEmail" class="block text-gray-700 font-medium mb-1">Email</label>
+                <input type="email" id="reEmail" class="w-full px-4 py-2 border border-gray-300 rounded-lg" required>
+            </div>
+            <div>
+                <label for="rePhone" class="block text-gray-700 font-medium mb-1">Phone Number</label>
+                <input type="tel" id="rePhone" class="w-full px-4 py-2 border border-gray-300 rounded-lg" required>
+            </div>
+            <div>
+                <label for="reInterest" class="block text-gray-700 font-medium mb-1">Service Interested In</label>
+                <select id="reInterest" class="w-full px-4 py-2 border border-gray-300 rounded-lg">
+                    <option>Residential Properties</option>
+                    <option>Commercial Properties</option>
+                    <option>Land Acquisition</option>
+                    <option>Property Management</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div>
+                <label for="reMessage" class="block text-gray-700 font-medium mb-1">Additional Details</label>
+                <textarea id="reMessage" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-emerald-800 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded transition">
+                Submit Inquiry
+            </button>
+        </form>
+    </div>
+</div>
+=======
+        <div class="bg-white rounded-xl p-8 max-w-md w-full mx-4" data-aos="zoom-in">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold text-emerald-800">Order <span id="productTitle"></span></h3>
+                <button onclick="closeOrderForm()" class="text-gray-500 hover:text-gray-700">
+                    <i data-feather="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <form id="orderForm" class="space-y-4">
+                <input type="hidden" id="orderProduct">
+                <div>
+                    <label for="orderName" class="block text-gray-700 font-medium mb-1">Full Name</label>
+                    <input type="text" id="orderName" class="w-full px-4 py-2 border border-gray-300 rounded-lg" required>
+                </div>
+                <div>
+                    <label for="orderEmail" class="block text-gray-700 font-medium mb-1">Email</label>
+                    <input type="email" id="orderEmail" class="w-full px-4 py-2 border border-gray-300 rounded-lg" required>
+                </div>
+                <div>
+                    <label for="orderLocation" class="block text-gray-700 font-medium mb-1">Location</label>
+                    <input type="text" id="orderLocation" class="w-full px-4 py-2 border border-gray-300 rounded-lg" required>
+                </div>
+                <div>
+                    <label for="orderPhone" class="block text-gray-700 font-medium mb-1">Phone Number</label>
+                    <input type="tel" id="orderPhone" class="w-full px-4 py-2 border border-gray-300 rounded-lg" required>
+                </div>
+                <button type="submit" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-4 rounded transition">
+                    Submit Order
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Initialize animations
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Initialize feather icons
+        feather.replace();
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Show order form
+        function showOrderForm(product, title) {
+            document.getElementById('productTitle').textContent = title;
+            document.getElementById('orderProduct').value = product;
+            document.getElementById('orderModal').classList.remove('hidden');
+        }
+
+        // Close order form
+        function closeOrderForm() {
+            document.getElementById('orderModal').classList.add('hidden');
+        }
+
+        // Handle order form submission
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const product = document.getElementById('orderProduct').value;
+            const name = document.getElementById('orderName').value;
+            const email = document.getElementById('orderEmail').value;
+            const location = document.getElementById('orderLocation').value;
+            const phone = document.getElementById('orderPhone').value;
+            
+            if (name && email && location && phone) {
+                const whatsappMessage = `NEW ORDER REQUEST%0A%0AProduct: ${product}%0AName: ${name}%0AEmail: ${email}%0ALocation: ${location}%0APhone: ${phone}`;
+                const whatsappUrl = `https://wa.me/2347030902651?text=${encodeURIComponent(whatsappMessage)}`;
+                
+                // Create a temporary link to handle the window.open in a way that works across devices
+                const link = document.createElement('a');
+                link.href = whatsappUrl;
+                link.target = '_blank';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                
+                // Clear form and close
+                closeOrderForm();
+                this.reset();
+            } else {
+                alert('Please fill all fields');
+            }
+        });
+
+        // Handle contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if (name && email && message) {
+                const whatsappMessage = `CONTACT FORM SUBMISSION%0A%0AName: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+                const whatsappUrl = `https://wa.me/2347030902651?text=${encodeURIComponent(whatsappMessage)}`;
+                
+                const link = document.createElement('a');
+                link.href = whatsappUrl;
+                link.target = '_blank';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                
+                // Clear form
+                this.reset();
+            } else {
+                alert('Please fill all fields');
+            }
+        });
+
+        // Real Estate Form Functions
+        function showRealEstateForm(type) {
+            document.getElementById('inquiryType').value = type;
+            document.getElementById('realEstateModal').classList.remove('hidden');
+        }
+
+        function closeRealEstateForm() {
+            document.getElementById('realEstateModal').classList.add('hidden');
+        }
+
+        // Handle real estate form submission
+        document.getElementById('realEstateForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('reName').value;
+            const email = document.getElementById('reEmail').value;
+            const phone = document.getElementById('rePhone').value;
+            const interest = document.getElementById('reInterest').value;
+            const message = document.getElementById('reMessage').value;
+            
+            if (name && email && phone) {
+                const whatsappMessage = `REAL ESTATE INQUIRY%0A%0AType: ${document.getElementById('inquiryType').value}%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AInterest: ${interest}%0ADetails: ${message || 'None provided'}`;
+                const whatsappUrl = `https://wa.me/2347030902651?text=${encodeURIComponent(whatsappMessage)}`;
+                
+                const link = document.createElement('a');
+                link.href = whatsappUrl;
+                link.target = '_blank';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                
+                // Clear and close form
+                closeRealEstateForm();
+                this.reset();
+            } else {
+                alert('Please fill all required fields');
+            }
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const menuButton = document.querySelector('.md-hide button');
+            
+            if (!mobileMenu.classList.contains('hidden') && 
+                !e.target.closest('#mobileMenu') && 
+                e.target !== menuButton && 
+                !menuButton.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
